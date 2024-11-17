@@ -1,1 +1,1 @@
-# my_collections
+# my_collection
