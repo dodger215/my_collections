@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fetch Attendance Data by Date</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        input[type="date"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Select Date to Fetch Attendance Data</h2>
+<input type="date" id="attendance-date" />
+<button onclick="fetchAttendanceData()">Fetch Data</button>
+
+<div id="result"></div>
+
+<script>
+    async function fetchAttendanceData() {
+        // Get the selected date from the input field
+        const selectedDate = document.getElementById('attendance-date').value;
+
+        // Check if a date was selected
+        if (!selectedDate) {
+            alert("Please select a date.");
+            return;
+        }
+
+        // Construct the JSON file name
+        const fileName = `attendance_data.json`;
+        console.log(fileName); // Log the filename to the console
+
+        try {
+            // Fetch the JSON file
+            const response = await fetch(fileName);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const data = await response.json();
+            console.log(data); // Log the fetched data
+
+            // Check if data contains the selected date
+            if (data[selectedDate]) {
+                displayData(data[selectedDate]);
+            } else {
+                alert(`No attendance records found for ${selectedDate}.`);
+            }
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            alert('Error fetching data for the selected date.');
+        }
+    }
+
+    function displayData(records) {
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = ''; // Clear previous results
+
+        const table = document.createElement('table');
+        table.border = '1';
+        table.innerHTML = `
+            <tr>
+                <th>Unique ID</th>
+                <th>Full Name</th>
+                <th>Classified</th>
+                <th>Phone</th>
+                <th>State</th>
+                <th>Gender</th>
+            </tr>
+        `;
+
+        records.forEach(record => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${record.unique_id}</td>
+                <td>${record.full_name}</td>
+                <td>${record.classified}</td>
+                <td>${record.phone}</td>
+                <td>${record.state}</td>
+                <td>${record.gender}</td>
+            `;
+            table.appendChild(row);
+        });
+
+        resultDiv.appendChild(table);
+    }
+</script>
+
+</body>
+</html>
