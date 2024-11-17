@@ -3,7 +3,7 @@
 include_once "config.php";
 
 $patient = $_POST['patientBill'];
-$appointmentId = $_POST['appointmentBill']
+$appointmentId = $_POST['appointmentBill'];
 $appointmentBill = $_POST['amount'];
 $paymentStatus = $_POST['paymentStatus'];
 $paymentDate = $_POST['paymentDate'];
@@ -38,7 +38,7 @@ $ran_id = rand(100, 1000);
         //     }
         // }
     }else{
-        echo "Error: " . $sql->connect_error();
+        echo "Error: ";
     }    
 
 
