@@ -260,6 +260,27 @@ img {
     animation: fadeIn 0.3s; /* Animation for showing */
 }
 
+
+.view-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Blurred background */
+    animation: fadeIn 0.3s; /* Animation for showing */
+}
+
+.view-container.active {
+    display: flex; /* Show dialog when active */
+    animation: fadeIn 0.3s; /* Animation for showing */
+}
+
 .dialog.active {
     display: flex; /* Show dialog when active */
     animation: fadeIn 0.3s; /* Animation for showing */

@@ -18,10 +18,6 @@ $data = json_decode($jsonData, true);
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    
-      
- 
-      
       
 </head>
 <body class="dark-mode">
@@ -108,6 +104,20 @@ $data = json_decode($jsonData, true);
             <h5 class="show_error" style="text-align: center; color: rgb(27, 27, 27); font-weight: 600; opacity: 60%; margin: 10px 0;"></h5>     
             <button class="btn btn-danger disable">close</button>
         </div>       
+    </div>
+
+    <div class="view-container">
+        <div class="view-main">
+            <button class="btn btn-danger disable">close</button>
+            <div class="view" data-category="' . htmlspecialchars($work['type']) . '">
+                <div class="content">
+                    <div class="img-view">
+                        <img src="../' . htmlspecialchars($work['image']) . '" class="card-img-top" alt="' . htmlspecialchars($work['title']) . '">
+                    </div>
+                </div>  
+            </div>  
+        </div>
+          
     </div>
 
 
