@@ -1,0 +1,98 @@
+{
+    "status": "success",
+    "users": [
+        {
+            "id": 134,
+            "name": "Kelvin",
+            "class": "advanced",
+            "levels": {
+                "level 1": [
+                    {
+                        "stage": "Stage 1",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-15 01:04:33"
+                        }
+                    },
+                    {
+                        "stage": "Stage 2",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-14 15:16:20"
+                        }
+                    },
+                    {
+                        "stage": "Stage 3",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-12 06:50:15"
+                        }
+                    },
+                    {
+                        "stage": "Stage 4",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-10-23 12:38:27"
+                        }
+                    },
+                    {
+                        "stage": "Stage 5",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-11 19:55:21"
+                        }
+                    },
+                    {
+                        "stage": "Stage 6",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-16 19:46:56"
+                        }
+                    },
+                    {
+                        "stage": "Stage 7",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-06 23:37:41"
+                        }
+                    },
+                    {
+                        "stage": "Stage 8",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-10-31 17:34:19"
+                        }
+                    },
+                    {
+                        "stage": "Stage 9",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-13 05:32:59"
+                        }
+                    },
+                    {
+                        "stage": "Stage 10",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-10-30 05:44:38"
+                        }
+                    },
+                    {
+                        "stage": "Stage 11",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-11-03 02:14:17"
+                        }
+                    },
+                    {
+                        "stage": "Stage 12",
+                        "data": {
+                            "score": 0,
+                            "time_uploaded": "2024-10-31 04:12:01"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

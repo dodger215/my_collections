@@ -1,0 +1,9 @@
+{
+  "hosting": {
+    "public": "public", // Adjust if necessary for your hosting setup
+    "ignore": ["firebase.json", "/.*", "/node_modules/**"]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}

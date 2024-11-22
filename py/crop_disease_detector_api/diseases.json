@@ -1,0 +1,32 @@
+{
+    "diseases": [
+        {
+            "name": "Healthy",
+            "description": "The crop is healthy with no signs of disease.",
+            "solutions": []
+        },
+        {
+            "name": "Powdery Mildew",
+            "description": "A fungal disease that appears as white powdery spots on leaves.",
+            "solutions": [
+                "Remove infected leaves.",
+                "Increase air circulation around plants.",
+                "Apply fungicides."
+            ]
+        },
+        {
+            "name": "Rust",
+            "description": "A fungal infection characterized by reddish-brown pustules on leaves.",
+            "solutions": [
+                "Use resistant crop varieties.",
+                "Apply fungicides early in the season.",
+                "Remove and destroy infected plants."
+            ]
+        },
+        {
+            "name": "Not Plant",
+            "description": "The uploaded image does not contain a plant.",
+            "solutions": []
+        }
+    ]
+}
